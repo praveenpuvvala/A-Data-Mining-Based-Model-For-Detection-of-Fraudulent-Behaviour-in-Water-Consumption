@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Data Mining Based Model For Detection of Fraudulent Behaviour in Water Consumption</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body bgcolor="#66CDAA">
+    <h1>A Data Mining Based Model For Detection of Fraudulent Behaviour in Water Consumption</h1>
+
+    <!-- Buttons for Different Actions -->
+    <table cellpadding="15">
+        <tr>
+            <td>
+                <a href="/getdataset" target="bottomframe"><button id="getdataset">Get Dataset</button></a>
+            </td>
+            <td>
+                <a href="/traindataset" target="bottomframe"><button id="traindataset">Train Dataset</button></a>
+            </td>
+            <td>
+                <a href="/testdatasetknn" target="bottomframe"><button id="testdatasetknn">Test Dataset with KNN</button></a>
+            </td>
+            <td>
+                <a href="/testdatasetsvm" target="bottomframe"><button id="testdatasetsvm">Test Dataset with SVM</button></a>
+            </td>
+            <td>
+                <a href="/processtestdata" target="bottomframe"><button id="processtestdata">Process Test Data</button></a>
+            </td>
+            <td>
+                <a href="/displayfraudusers" target="bottomframe"><button id="displayfraudusers">Predict Fraud Users</button></a>
+            </td>
+            <td>
+                <a href="/showaccuracy" target="bottomframe"><button id="showaccuracy">Show Accuracy</button></a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Find User Section -->
+    <div>
+        <h2>Find User</h2>
+        <form action="/finduser" method="post" target="bottomframe">
+            <label for="user_id">Enter User ID:</label>
+            <input type="text" id="userid" name="userid" required>
+            <button type="submit">Find User</button>
+        </form>
+    </div>
+</body>
+</html>

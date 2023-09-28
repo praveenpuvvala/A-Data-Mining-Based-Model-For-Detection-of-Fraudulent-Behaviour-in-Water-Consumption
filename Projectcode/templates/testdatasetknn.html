@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Output Page</title>
+</head>
+<body bgcolor="#CCCCFF">
+    <h1>K-Nearest Neighbor(KNN) Results:</h1>
+<p>Confusion Matrix</p>
+    <pre>{{ knn_data['cm'] | safe }}</pre>
+<p>Classification Report</p>
+    <pre>{{ knn_data['cr'] | safe }}</pre>
+</body>
+</html>
+

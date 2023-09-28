@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Output Page</title>
+</head>
+<body bgcolor="#DEB887">
+    <h1>Support Vector Machine (SVM) Results:</h1>
+    <p>Confusion Matrix:</p>
+    <pre>{{ svm_data['cm'] | safe }}</pre>
+
+    <p>y_train:</p>
+    <pre>{{ svm_data['cr'] | safe }}</pre>
+</body>
+</html>
+
+
+

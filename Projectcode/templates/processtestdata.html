@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Output Page</title>
+</head>
+<body bgcolor="#9370DB">
+    <h1>Processed Test Data</h1>
+    <p>Confusion Matrix</p>
+    <pre>{{ pt_data['cm'] | safe }}</pre>
+
+    <p>Classification Report</p>
+    <pre>{{ pt_data['cr'] | safe }}</pre>
+</body>
+</html>
