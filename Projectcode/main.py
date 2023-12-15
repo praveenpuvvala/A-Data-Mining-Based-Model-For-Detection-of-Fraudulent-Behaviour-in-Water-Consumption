@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
  
 def get_dataset():
     global data
-    data = pd.read_csv('synthetic_water_consumption_data_with_details.csv')
+    data = pd.read_csv('dataset.csv')
     return "Data is Ready to use"
 
 
